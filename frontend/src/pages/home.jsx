@@ -19,7 +19,7 @@ export default function Home() {
             >
                 <Title />
                 <motion.img 
-                    src='/f1-project/assets/logos/f1_logo.png' 
+                    src='/f1-project/frontend/public/assets/logos/f1_logo.png' 
                     style={{width: '205px'}} 
                     animate={{opacity: [0, 1, 1], translateY: ['58px', '58px', '0px']}} 
                     transition={{duration: 2, delay: 3, ease: 'easeInOut'}}
