@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home.jsx';
 import MenuPage from './pages/menuPage.jsx';
 import About from './pages/about.jsx'
@@ -12,7 +12,7 @@ import RaceInfoPage from './pages/raceInfoPage.jsx';
 
 export default function App() {
   return (
-    <Router basename="/f1-project">
+    <Router>
       <Routes>
         <Route path='/' element={<Home />} /> {/*set default page to Home page*/}
         <Route path='/home' element={<Home />} /> 
