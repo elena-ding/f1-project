@@ -28,7 +28,7 @@ export default function Home() {
             </motion.div>
             <motion.img 
                 className='menu-img-container'
-                src='/assets/misc. images/menu_img.jpg' 
+                src='/f1-project/assets/misc. images/menu_img.jpg' 
                 initial={{translateY: '100%'}}
                 animate={clicked ? {translateY: ['100%', '0%', '0%'], opacity: [0.9, 0.9, 0.5]} : null}
                 onAnimationComplete={() => navigate('/menu/')}
