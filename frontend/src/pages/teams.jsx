@@ -71,7 +71,7 @@ function TeamsTable() {
                             animate={hoveredIndex === i ? {
                                 filter: 'drop-shadow(0 0 40px rgb(' + teamColours[i] + ')', scale: 1.1
                             } : {filter: 'drop-shadow(0 0 0px transparent', scale: 1}}
-                            src={'assets/logos/teams/' + item.path} 
+                            src={'/f1-project/assets/logos/teams/' + item.path} 
                             style={{width: item.width}}
                             onMouseEnter={() => setHoveredIndex(i)}
                             onMouseLeave={() => setHoveredIndex(null)}
@@ -112,7 +112,7 @@ function TeamsTable() {
                             animate={hoveredIndex === i + 5 ? {
                                 filter: 'drop-shadow(0 0 40px rgb(' + teamColours[i + 5] + ')', scale: 1.1
                             } : {filter: 'drop-shadow(0 0 0px transparent', scale: 1}}
-                            src={'assets/logos/teams/' + item.path} 
+                            src={'/f1-project/assets/logos/teams/' + item.path} 
                             style={{width: item.width}}
                             onMouseEnter={() => setHoveredIndex(i + 5)}
                             onMouseLeave={() => setHoveredIndex(null)}
