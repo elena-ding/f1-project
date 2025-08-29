@@ -4,7 +4,11 @@ let dbConnection;
 
 module.exports = {
     connectToDb: (cb) => {
-        MongoClient.connect('mongodb://localhost:27017/f1Project')
+        const uri = process.env.MONGODB_URI;
+        if (!uri) {
+            return cb(new Error("MONGODB_URI not set in environment"));
+        }
+        MongoClient.connect(uri)
             .then((client) => {
                 dbConnection = client.db();
                 return cb();
