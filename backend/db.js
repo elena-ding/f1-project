@@ -8,14 +8,10 @@ module.exports = {
         if (!uri) {
             return cb(new Error("MONGODB_URI not set in environment"));
         }
-        MongoClient.connect(uri, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-            tls: true,
-            tlsAllowInvalidCertificates: false
-        })
+        MongoClient.connect(uri)
             .then((client) => {
                 dbConnection = client.db("f1Project");
+                console.log("Connected to MongoDB Atlas");
                 return cb();
             })
             .catch((err) => {
