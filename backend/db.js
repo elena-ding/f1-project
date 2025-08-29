@@ -8,9 +8,14 @@ module.exports = {
         if (!uri) {
             return cb(new Error("MONGODB_URI not set in environment"));
         }
-        MongoClient.connect(uri)
+        MongoClient.connect(uri, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+            tls: true,
+            tlsAllowInvalidCertificates: false
+        })
             .then((client) => {
-                dbConnection = client.db();
+                dbConnection = client.db("f1Project");
                 return cb();
             })
             .catch((err) => {
