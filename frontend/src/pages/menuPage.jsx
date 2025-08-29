@@ -7,7 +7,7 @@ import './menuPage.css'
 export default function MenuPage() {
     return (
         <>
-            <img className='menu-img-container' src='/assets/misc. images/menu_img.jpg' style={{opacity: 0.5}} />
+            <img className='menu-img-container' src='/f1-project/assets/misc. images/menu_img.jpg' style={{opacity: 0.5}} />
             <p className='menu-img-desc'>Jackie Stewart wins the 1968 German Grand Prix.</p>
             <PageTitle title='MENU.' slideDist='-170px' />
             <MenuItems />
