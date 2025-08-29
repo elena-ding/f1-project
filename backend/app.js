@@ -10,9 +10,11 @@ app.use(cors());
 
 let db;
 
+const PORT = process.env.PORT || 3000;
+
 connectToDb((err) => {
     if (!err) {
-        app.listen(3000, () => {
+        app.listen(PORT, () => {
             console.log("listening");
         })
         db = getDb();
