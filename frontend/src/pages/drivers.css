@@ -1,0 +1,73 @@
+.driver-icon .thin-text {
+    font-family: Helvetica, Arial, sans-serif;
+    color:#f2e9e5;
+    margin: 0;
+    font-weight: 550;
+    opacity: 1;
+    font-size: 18px;
+}
+
+.driver-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    position: relative;
+}
+
+.driver-label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.driver-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 50px;    
+    width: 1475px;
+    position: relative;
+}
+
+.spacing h2,
+.spacing img {
+    margin: 0
+}
+
+.fade-in {
+    animation: fadeIn 1.5s forwards;
+    animation-delay: calc(var(--delay));
+}
+
+.rect {
+    width: 100%;
+    height: 939px;
+    position: absolute;
+    top: calc(var(--viewportTop) - 300px);
+    left: -10px;
+    margin: 0;
+    padding: 0;
+    z-index: 11;
+    background-color: var(--bgCol);
+}
+
+.num-img {
+    height: 130px;
+    position: absolute;
+    top: calc((var(--viewportTop) - 300px) + 390px);
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    z-index: 12;
+}
+
+body {
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

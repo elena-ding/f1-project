@@ -1,0 +1,47 @@
+.race-text {
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 0;
+    padding: 4.5px;
+}
+
+.race-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 260px;
+    width: 800px;
+    overflow: hidden;
+}
+
+.globe-pos {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1700px;
+    opacity: 0;
+}
+
+.stagger-slide {
+    animation: slideIn 1s ease-in-out var(--staggerDelay) forwards;
+}
+
+.fade-in-globe {
+    animation: fadeIn 1.5s ease 5.9s forwards;
+}
+
+@keyframes slideIn {
+    0% {transform: translateX(800px)}
+    100% {transform: translateX(50%);}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

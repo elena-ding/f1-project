@@ -1,0 +1,178 @@
+.transition-rect {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 11;
+    background-color: var(--bgCol);
+}
+
+.transition-num-img {
+    height: 130px;
+    position: absolute;
+    top: 390px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    z-index: 12;
+}
+
+.label-text {
+    font-family: Helvetica, Arial, sans-serif;
+    color:#f2e9e5;
+    margin: 0;
+    font-weight: 550;
+    font-size: 20px;
+}
+
+.driver-info-text {
+    font-family: Helvetica, Arial, sans-serif;
+    color:#f2e9e5;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+.slide-up-rect {
+    animation: slideUpRect 1.5s ease-in-out 0.5s forwards;
+}
+
+.slide-up-num {
+    animation: slideUpNum 1.5s ease-in-out 0.5s forwards;
+}
+
+.slide-up{
+    animation: slideUp 1.5s ease-in-out 0.5s forwards;
+}
+
+.slide-up-line {
+    animation: slideUpOutLine 1.5s ease-in-out 0.5s forwards;
+}
+
+.slide-up-centered {
+    animation: slideUpCentered 1.5s ease-in-out 0.5s forwards;
+}
+
+.slide-up-labels {
+    animation: slideUpLabels 1.5s ease-in-out 0.5s forwards;
+}
+
+.driver-name-text {
+    font-family: Helvetica, sans-serif;
+    font-size: 70px;
+    text-transform: uppercase;
+    color:#f2e9e5;
+    margin: 0;
+    padding: 0;
+}
+
+.driver-header {
+    position: absolute;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+}
+
+.flag-number-container {
+    position: absolute;
+    right: 100px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 70px;
+}
+
+.driver-line {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 6px;
+    top: 300px;
+    background-color: var(--lineColour);
+    transform-origin: left;
+}
+
+.driver-img {
+    position: absolute;
+    width: 750px;
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #f2e9e5;
+    position: relative;
+    top: 21px;
+}
+
+.label-line {
+    width: var(--len);
+    height: 3px;
+    rotate: var(--deg);
+    background-color: #f2e9e5;
+    position: relative;
+    top: var(--topPos);
+    left: var(--leftPos);
+}
+
+.label-underline {
+    width: 100%;
+    height: 2.5px;
+    background-color: #f2e9e5;
+    transform-origin: left;
+}
+
+.fade-in-graph {
+    animation: fadeIn 1.5s forwards;
+}
+
+body {
+    margin: 0;
+}
+
+@keyframes slideUpRect {
+    0% {transform: translateY(0); opacity: 100}
+    100% {transform: translateY(-940px); opacity: 0}
+}
+
+@keyframes slideUpNum {
+    0% {transform: translate(-50%, 0); opacity: 100}
+    100% {transform: translate(-50%, -940px); opacity: 0}
+}
+
+@keyframes slideUp {
+    0% {transform: translateY(940px); opacity: 0}
+    100% {transform: translateY(0); opacity: 100}
+}
+
+@keyframes slideUpCentered {
+    0% {transform: translate(100%, 940px); opacity: 0}
+    100% {transform: translate(-50%, 0); opacity: 100}
+}
+
+@keyframes slideUpLabels {
+    0% {transform: translate(150%, 940px); opacity: 0}
+    100% {transform: translate(0%, 0); opacity: 100}
+}
+
+@keyframes slideUpOutLine {
+     0% {transform: translateY(940px) scaleX(0); opacity: 0}
+    100% {transform: translateY(0) scaleX(1); opacity: 100}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

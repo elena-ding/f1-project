@@ -1,0 +1,42 @@
+.title-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 1200px;
+    top: 150px;
+    left: 70px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.title-container-2 { 
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 1200px;
+    top: 150px;
+    left: 70px;
+    margin: 0;
+    overflow: hidden;
+    transform: translateY(-25%);
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-end; 
+    width: calc(var(--logoWidth) * 1px + 20px);
+    position: absolute;
+    top: calc(var(--logoPos) * 1px);
+    right: 80px;
+    overflow: hidden
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 3px;
+    top: calc(400px + var(--height));
+    background-color: var(--lineColour);
+    transform-origin: var(--origin);
+}

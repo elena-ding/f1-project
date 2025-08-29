@@ -1,0 +1,126 @@
+.race-name-text {
+    font-family: Helvetica, sans-serif;
+    font-size: 70px;
+    text-transform: uppercase;
+    color:#f2e9e5;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100px;
+    left: 75px;
+}
+
+.circuit-img {
+    position: relative;
+    top: 220px;
+    left: 50%;
+    height: 630px;
+    transform: translateX(-50%);
+}
+
+.race-details-rect {
+    background-color: #192975;
+    width: 400px;
+    height: 938px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.circuit-container {
+    display: inline-block;
+    width: 1225px;
+}
+
+.race-details-text {
+    font-family: Helvetica, Arial, sans-serif;
+    justify-content: space-between;
+    color: #f2e9e5;
+    margin: 0;
+    padding: 4.5px;
+    font-size: 350;
+    font-weight: 200;
+}
+
+.race-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    position: relative;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+}
+
+.pop-up-button-text {
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    color: #f2e9e5;
+    margin: 0;
+    padding: 4.5px;
+    font-weight: 550; 
+    position: absolute;
+    top: 95%;
+    left: 35px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.pop-up-rect {
+    background-color: #192975;
+    border-radius: 20px;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: #090e29 0px 0px 50px 20px;
+    opacity: 0%;
+}
+
+.pop-up-text {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #f2e9e5;
+    line-height: 1.5;
+    font-weight: 340;
+    font-size: 18px;
+    padding: 25px;
+    position: relative;
+    top: 12px;
+}
+
+.fade-in-race-title {
+    animation: fadeIn 1s ease forwards;
+}
+
+.bg-damper {
+    background-color: #18191A;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0%;
+}
+
+.x-button-line {
+    width: 20px;
+    height: 2px;
+    rotate: var(--rotate);
+    background-color: #f2e9e5;
+    position: absolute;
+    top: 300px;
+    left: 1095px;
+    z-index: 2;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

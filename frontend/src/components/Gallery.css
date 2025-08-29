@@ -1,0 +1,35 @@
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    top: var(--topPos);
+    width: fit-content;
+    align-items: center;
+    left: var(--leftPos);
+    transform: translateX(var(--moveX)) !important;
+    margin: 0;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: var(--imgWidth);
+    height: var(--imgHeight);
+}
+
+.gallery-caption {
+    font-family: Helvetica, Arial, sans-serif;
+    color:#f2e9e5;
+    font-weight: 550;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.text-shadow {
+    text-shadow: 3px 3px 7px #18191A;
+}

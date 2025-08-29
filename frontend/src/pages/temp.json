@@ -1,0 +1,39 @@
+[
+    {
+        "number": 1,
+        "images": ["c1-1.jpg", "c1-2.jpg", "c1-3.jpeg", "c1-4.jpg", "c1-5.jpg", "c1-6.jpg", "c1-7.jpeg", "c1-8.jpg", "c1-9.jpg"],
+        "descriptions": [
+            "Lap 1 of the Bahrain Grand Prix (2024)",
+            "Ferrari mechanics perform a pitstop on Charles Leclerc's car (Car 16) at the Bahrain GP (2022)",
+            "Mercedes mechanics perform fixes on Valtteri Bottas' car (Car 77) (2021)",
+            "Laura Mueller, the first female race engineer in F1 history, race engineer for Esteban Ocon (2025)",
+            "Gianpiero Lambiase, long-time race engineer for Max Verstappen (2022)",
+            "The pit wall for Infiniti Red Bull Racing (2014)",
+            "Former AlphaTauri team principal Franz Tost among other strategists on the pitwall (2022)",
+            "Marina Bay Street Circuit, host of the Singapore GP (2015)",
+            "Lusail International Circuit, host of the Qatar GP (2023)"
+        ]
+    }, 
+    {
+        "number": 2,
+        "images": ["c2-1.JPG", "c2-2.jpg", "c2-3.jpeg", "c2-4.jpg", "c2-5.jpg", "c2-6.JPG", "c2-7.jpeg"],
+        "descriptions": [
+            "The starting grid for the Saudi Arabian GP (2024)",
+            "Yellow (top) and red (bottom) flags being shown to drivers",
+            "Blue (top) and green (bottom) flags being shown to drivers",
+            "Lewis Hamilton is shown the chequered flag as he wins the US GP (2017)",
+            "Max Verstappen causes a collision with Lewis Hamilton at the Italian GP and receives a three-place grid penalty for the next race (2021)",
+            "Ferrari mechanics perform a pitstop on Carlos Sainz's car (Car 55) (2024)",
+            "The 5 tyre compounds used in Formula 1 on display at the F1 exhibition in London"
+        ]
+    }, 
+    {
+        "number": 3,
+        "images": ["c3-1.jpeg", "c3-2.jpeg"],
+        "descriptions": [
+            "Max Verstappen wins the Drivers' Championship and becomes a four-time World Champion (2024)",
+            "McLaren wins the Constructors' Championship and becomes nine-time Constructors' Champions (2024)"
+        ]
+    }
+    
+]

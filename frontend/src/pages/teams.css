@@ -1,0 +1,32 @@
+h3 {
+    font-size: 20px;
+}
+
+.thin-text {
+    font-family: Helvetica, Arial, sans-serif;
+    color:#f2e9e5;
+    margin: 0;
+    font-weight: 550;
+    opacity: 1;
+    font-size: 20px;
+}
+
+.teams-grid {
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    position: absolute;
+    top: var(--topPos);
+    left: 50%; 
+    transform: translateX(-50%);  
+    width: 1550px;
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease var(--delay) forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
