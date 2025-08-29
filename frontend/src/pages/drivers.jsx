@@ -80,7 +80,7 @@ function DriverGrid({ driversArr }) {
                             animate={{opacity: 1, scale: 1}}
                             transition={{duration: 0.75}}
                             style={{'--viewportTop': viewportCentre + 'px', '--bgCol': driverInfo[1], filter: blackNumLogos.includes(driverInfo[2]) ? 'invert(1)' : 'auto'}}
-                            src={'/assets/logos/drivers/' + driverInfo[2]}
+                            src={'/f1-project/assets/logos/drivers/' + driverInfo[2]}
                         />
                     </>
                 ) : null}
@@ -115,7 +115,7 @@ function DriverIcon({ driver}) {
     return (
         <>
             <motion.div className='driver-icon'>
-                <motion.img src={'/assets/driver profile icons/' + driver.icon} style={{width: '180px'}}/>
+                <motion.img src={'/f1-project/assets/driver profile icons/' + driver.icon} style={{width: '180px'}}/>
                 <motion.div className='driver-label'>
                     <motion.p className='thin-text' style={{fontWeight: '600'}}>{driver.name}</motion.p>
                     <motion.p className='thin-text'>{driver.currentTeam}</motion.p>
