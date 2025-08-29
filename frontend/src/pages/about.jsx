@@ -56,7 +56,7 @@ function AboutImg() {
             <div className='about-img-container'>
                 <motion.img 
                     className='about-img' 
-                    src='/assets/misc. images/monaco_hairpin.jpg' 
+                    src='/f1-project/assets/misc. images/monaco_hairpin.jpg' 
                     initial={{translateX: '-101%'}}
                     animate={{translateX: '0%'}}
                     transition={{duration: 1.5, ease: 'easeOut'}}
