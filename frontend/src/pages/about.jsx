@@ -116,7 +116,7 @@ function OrganizationInfo() {
     const [orgInfoDescs, setOrgInfoDescs] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/about')
+        fetch('https://f1-project-backend.onrender.com')
         .then((response) => {return response.json()})
         .then((data) => {
             setOrgInfoImges(data[0].images);
