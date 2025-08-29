@@ -14,7 +14,7 @@ module.exports = {
                 return cb();
             })
             .catch((err) => {
-                console.log('error');
+                console.log('error: ', err);
                 return cb(err);
             })
     },
