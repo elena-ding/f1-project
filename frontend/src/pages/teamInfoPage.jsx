@@ -73,7 +73,7 @@ function CarInfo({ teamInfo }) {
                     </motion.span>
                 </div>
                 <motion.img
-                    src={'/assets/cars/' + teamInfo.car}
+                    src={'/f1-project/assets/cars/' + teamInfo.car}
                     style={{width: '600px'}}
                     variants={{
                         rest: { translateX: '-1300px',},
@@ -107,7 +107,7 @@ function TeamLeadIcon({ teamLead, teamLeadStart, teamLeadLabel, slideDist }) {
                 </motion.h2>
 
                 <motion.img 
-                    src={'/assets/people/' + teamLead[1]} style={{width: 600}} 
+                    src={'/f1-project/assets/people/' + teamLead[1]} style={{width: 600}} 
                     initial={{ opacity: 0, translateX: slideDist }}
                     animate={{ opacity: 1, translateX: '0px' }}
                     transition={{ duration: 1.5 }}                        
@@ -156,7 +156,7 @@ function DriverIcon({ driverData, teamData, driver }) {
                             animate={{opacity: 1, scale: 1, translateX: '-50%'}}
                             transition={{duration: 0.75}}
                             style={{'--viewportTop': viewportCentre + 'px', '--bgCol': teamData.logo[2], filter: blackNumLogos.includes(driverData[1]) ? 'invert(1)' : 'auto'}}
-                            src={'/assets/logos/drivers/' + driverData[3]}
+                            src={'/f1-project/assets/logos/drivers/' + driverData[3]}
                         />
                     </>
                 ) : null}
@@ -164,7 +164,7 @@ function DriverIcon({ driverData, teamData, driver }) {
 
             <div className='indv-driver-container'>
                 <motion.img
-                    src={'/assets/people/' + driverData[2]}
+                    src={'/f1-project/assets/people/' + driverData[2]}
                     style={{width: 600}} 
                     initial={{ opacity: 0, translateY: '100px'}}
                     whileInView={{ opacity: 1, translateY: '0px' }}
@@ -177,7 +177,7 @@ function DriverIcon({ driverData, teamData, driver }) {
                 />
                 <div className='driver-info'>
                     <motion.img 
-                        src={'/assets/logos/drivers/' + driverData[3]} 
+                        src={'/f1-project/assets/logos/drivers/' + driverData[3]} 
                         style={{height: '70px', aspectRatio: 'auto', objectFit: 'contain', objectPosition: 'left center', filter: blackNumLogos.includes(driverData[1]) ? 'invert(1)' : 'auto'}} 
                         initial={{ opacity: 0, translateY: '100px'}}
                         whileInView={{ opacity: 1, translateY: '0px' }}
@@ -203,7 +203,7 @@ function DriverIcon({ driverData, teamData, driver }) {
                         ({driverData[4]} - )
                     </motion.h3>
                     <motion.img 
-                        src={'/assets/flags/' + driverData[5]}
+                        src={'/f1-project/assets/flags/' + driverData[5]}
                         style={{width: '100px'}}
                         initial={{ opacity: 0, translateY: '100px'}}
                         whileInView={{ opacity: 1, translateY: '0px' }}
