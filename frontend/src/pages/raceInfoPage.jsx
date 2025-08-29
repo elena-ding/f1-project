@@ -40,7 +40,7 @@ function Circuit({ circuitImg }) {
     return (
         <motion.div className='circuit-container'>
             <motion.img 
-                src={'/assets/circuits/' + circuitImg} 
+                src={'/f1-project/assets/circuits/' + circuitImg} 
                 className='circuit-img' 
                 animate={{translateY: ['700px', '0px', '0px', '0px'], scale: [0.5, 0.5, 1, 1], translateX: ['-25%', '-25%', '-25%', '-50%']}} 
                 transition={{duration: 3, ease: 'easeInOut'}}
