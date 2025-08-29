@@ -36,7 +36,7 @@ export default function DriverInfoPage() {
                     <motion.img 
                         className='transition-num-img'
                         style={{'--topPos': top.top ,filter: blackNumLogos.includes(number) ? 'invert(1)' : 'auto'}}
-                        src={'/assets/logos/drivers/' + number}
+                        src={'/f1-project/assets/logos/drivers/' + number}
                     />
                 </>
             )
@@ -64,7 +64,7 @@ function DriverHeader({ driver, top }) {
             <motion.img 
                 className='transition-num-img slide-up-num'
                 style={{'--topPos': top, filter: blackNumLogos.includes(driver.number) ? 'invert(1)' : 'auto'}}
-                src={'/assets/logos/drivers/' + driver.number}
+                src={'/f1-project/assets/logos/drivers/' + driver.number}
             />
             <motion.div className='driver-header'>
                 <motion.h1 
@@ -77,12 +77,12 @@ function DriverHeader({ driver, top }) {
                      <motion.img 
                         className='slide-up'
                         style={{margin: 0, padding: 0, height: '100px'}}
-                        src={'/assets/flags/' + driver.flag}
+                        src={'/f1-project/assets/flags/' + driver.flag}
                     />
                     <motion.img 
                         className='slide-up'
                         style={{margin: 0, padding: 0, height: '100px', filter: blackNumLogos.includes(driver.number) ? 'invert(1)' : 'auto'}}
-                        src={'/assets/logos/drivers/' + driver.number}
+                        src={'/f1-project/assets/logos/drivers/' + driver.number}
                     />
                 </motion.div>
             </motion.div>
@@ -485,7 +485,7 @@ function DriverInfo({ driver }) {
         <>
             <motion.img 
                 className='driver-img slide-up-centered' 
-                src={'/assets/people/' + driver.image}
+                src={'/f1-project/assets/people/' + driver.image}
             />
             {labels.map((item, i) => (
                 <LabelLine 
