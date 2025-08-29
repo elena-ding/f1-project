@@ -12,7 +12,7 @@ import RaceInfoPage from './pages/raceInfoPage.jsx';
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/f1-project">
       <Routes>
         <Route path='/' element={<Home />} /> {/*set default page to Home page*/}
         <Route path='/home' element={<Home />} /> 
