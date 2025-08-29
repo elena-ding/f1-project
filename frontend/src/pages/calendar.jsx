@@ -116,7 +116,7 @@ function GlobeOfRaces() {
             height={[750]}
             htmlElement={d => {
                 const el = document.createElement('img');
-                el.src = '/assets/flags/' + d.icon;
+                el.src = '/f1-project/assets/flags/' + d.icon;
                 el.style.width='45px'
                 el.style['pointer-events'] = 'auto';
                 el.style.cursor = 'pointer';
