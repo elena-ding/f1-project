@@ -83,7 +83,7 @@ function GlobeOfRaces() {
     const [globeData, setGlobeData] = useState([])
 
     useEffect(() => {
-        fetch('hhttps://f1-project-backend.onrender.com/globe')
+        fetch('https://f1-project-backend.onrender.com/globe')
         .then((response) => {return response.json()})
         .then((data) => {
             setGlobeData(data);
