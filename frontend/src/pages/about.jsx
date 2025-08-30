@@ -159,7 +159,7 @@ function RaceInfo() {
     const [raceInfoDescs, setRaceInfoDescs] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/about')
+        fetch('https://f1-project-backend.onrender.com/about')
         .then((response) => {return response.json()})
         .then((data) => {
             setRaceInfoImges(data[1].images);
@@ -184,7 +184,7 @@ function ChampionshipInfo() {
     const [champInfoDescs, setChampInfoDescs] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/about')
+        fetch('https://f1-project-backend.onrender.com/about')
         .then((response) => {return response.json()})
         .then((data) => {
             setChampInfoImges(data[2].images);
