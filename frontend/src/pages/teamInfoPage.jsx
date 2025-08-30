@@ -220,7 +220,7 @@ function TeamMembers({ teamData }) {
     const [drivers, setDrivers] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/drivers')
+        fetch('https://f1-project-backend.onrender.com/drivers')
         .then((response) => {return response.json()})
         .then((data) => {
             setDrivers(data);
