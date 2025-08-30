@@ -65,7 +65,7 @@ function TeamLogoSlide({ teamLogo, logoWidth, logoPos }) {
     return (
         <div className='logo-container' style={{'--logoWidth': logoWidth, '--logoPos': logoPos}}>
             <motion.img 
-                src={'/assets/logos/teams/' + teamLogo}
+                src={'/f1-project/assets/logos/teams/' + teamLogo}
                 style={{width: logoWidth, '--logoPos': logoPos, zIndex: -1}}
                 initial={{translateX: logoWidth}}
                 animate={{translateX: '0px'}}
