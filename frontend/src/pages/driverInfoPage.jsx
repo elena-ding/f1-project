@@ -19,7 +19,7 @@ export default function DriverInfoPage() {
     const blackNumLogos=["GR63.png", "KA12.png", "CL16.png", "LH44.png", "CS55.png", "AA23.png", "GB5.png", "NH27.png", "FA14.png", "LS18.png", "PG10.png", "FC43.png"]
     
         useEffect(() => {
-            fetch('http://localhost:3000/drivers')
+            fetch('https://f1-project-backend.onrender.com/drivers')
             .then((response) => {return response.json()})
             .then((data) => {
                 setDrivers(data);
@@ -465,7 +465,7 @@ function DriverInfo({ driver }) {
     const [recentPostUrl, setRecentPostUrl] = useState("");
     
     useEffect(() => {
-        fetch('http://localhost:3000/labels')
+        fetch('https://f1-project-backend.onrender.com/labels')
         .then((response) => {return response.json()})
         .then((data) => {
             setLabels(data);
