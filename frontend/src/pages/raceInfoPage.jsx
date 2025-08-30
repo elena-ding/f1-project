@@ -9,7 +9,7 @@ export default function RaceInfoPage() {
     const [raceData, setRaceData] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/circuits')
+        fetch('https://f1-project-backend.onrender.com/circuits')
         .then((response) => {return response.json()})
         .then((data) => {
             setRaceData(data.find(d => d.raceName === raceName))
