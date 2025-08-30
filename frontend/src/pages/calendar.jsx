@@ -25,7 +25,7 @@ function RaceList() {
     const [circuits, setCircuits] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/circuits')
+        fetch('https://f1-project-backend.onrender.com/circuits')
         .then((response) => {return response.json()})
         .then((data) => {
             setCircuits(data);
@@ -83,7 +83,7 @@ function GlobeOfRaces() {
     const [globeData, setGlobeData] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:3000/globe')
+        fetch('hhttps://f1-project-backend.onrender.com/globe')
         .then((response) => {return response.json()})
         .then((data) => {
             setGlobeData(data);
