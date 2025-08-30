@@ -1,7 +1,7 @@
 import PageTitle from '../components/PageTitle.jsx';
 import MenuButton from '../components/MenuButton.jsx';
 import { motion } from 'motion/react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './teams.css'
 
