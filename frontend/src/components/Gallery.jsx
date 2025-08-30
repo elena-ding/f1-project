@@ -69,7 +69,7 @@ export default function Gallery({ photos, photoPath, top, left, translateX, widt
                         <motion.img 
                             key={photos[currentImgInd]}
                             custom={direction.current}
-                            src={'/assets/' + photoPath + '/' + photos[currentImgInd]} 
+                            src={'/f1-project/assets/' + photoPath + '/' + photos[currentImgInd]} 
                             style={{width: width + 'px', height: height, position: 'absolute', top: 0, left: 0}}
                             variants={variants}
                             initial="slideIn"                         
