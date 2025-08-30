@@ -25,7 +25,7 @@ export default function DropdownButton({ inputDriverNum, inputDriverName }) {
     const [selectedDriver, setSelectedDriver] = React.useState('Select Driver')
 
     React.useEffect(() => {
-        fetch('http://localhost:3000/drivers')
+        fetch('https://f1-project-backend.onrender.com/drivers')
         .then((response) => {return response.json()})
         .then((data) => {
             setDrivers(data);
