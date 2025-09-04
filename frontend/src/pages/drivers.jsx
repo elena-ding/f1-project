@@ -24,7 +24,10 @@ function DriversTable() {
         fetch('https://f1-project-backend.onrender.com/drivers')
         .then((response) => {return response.json()})
         .then((data) => {
-            setDrivers(data);
+            const sortedData = [...data].sort((a, b) =>
+                a.image > b.image ? 1 : -1
+            );
+            setDrivers(sortedData);
         })
     }, [])
     
