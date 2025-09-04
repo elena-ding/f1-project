@@ -27,7 +27,6 @@ function DriversTable() {
             const sortedData = [...data].sort((a, b) =>
                 a.image > b.image ? 1 : -1
             );
-            console.log(sortedData);
             setDrivers(sortedData);
         })
     }, [])
