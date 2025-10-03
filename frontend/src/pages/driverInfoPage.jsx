@@ -473,7 +473,7 @@ function DriverInfo({ driver }) {
     }, [])
 
     useEffect(() => {
-        fetch('https://api.apify.com/v2/datasets/jeKvXMg1EM6APi7qv/items?token=apify_api_YXfuAeV3e8bvAU7PXBq5mx4Qtdm3th0AvKYb')
+        fetch('https://api.apify.com/v2/acts/apify~instagram-post-scraper/runs/last/dataset/items?token=apify_api_YXfuAeV3e8bvAU7PXBq5mx4Qtdm3th0AvKYb')
         .then((response) => {return response.json()})
         .then((data) => {
             const driverProfile=data.find(d => d.inputUrl === driver.igLink)
