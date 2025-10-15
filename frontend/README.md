@@ -1,7 +1,7 @@
 # 🏎️ Formula 1 Data Exploration and Visualization Interface
 
 **Live Site:** [https://elena-ding.github.io/f1-project/](https://elena-ding.github.io/f1-project/)  
-**Status:** In Development (May 2025 – Present)
+**Status:** Completed (minor fixes and enhancements pending)
 
 An interactive web application built with React.js that brings Formula 1 statistics to life. Designed to provide fans—both new and seasoned—with dynamic visualizations of driver and team profiles, race data, and season statistics. The app leverages modern web technologies to deliver an engaging and accessible experience.
 
