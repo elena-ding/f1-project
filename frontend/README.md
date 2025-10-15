@@ -1,12 +1,34 @@
-# React + Vite
+# 🏎️ Formula 1 Data Exploration and Visualization Interface
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Site:** [https://elena-ding.github.io/f1-project/](https://elena-ding.github.io/f1-project/)  
+**Status:** In Development (May 2025 – Present)
 
-Currently, two official plugins are available:
+An interactive web application built with React.js that brings Formula 1 statistics to life. Designed to provide fans—both new and seasoned—with dynamic visualizations of driver and team profiles, race data, and season statistics. The app leverages modern web technologies to deliver an engaging and accessible experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Driver & Team Profiles:** Explore detailed statistics, historical performance, and media content.
+- **Dynamic Race Visualizations:** Interactive charts showcasing race results, lap times, and more.
+- **Season Dashboards:** Overview of season standings, constructor rankings, and key metrics.
+- **Smooth Animations:** Enhanced user experience with Framer Motion for seamless transitions.
+- **Responsive Design:** Optimized for both desktop and mobile devices.
+- **Data Integration:** Utilizes MongoDB for efficient data storage and retrieval.
+
+---
+
+## ⚙️ Technologies Used
+
+- **Frontend:** React.js, JavaScript, HTML, CSS, Framer Motion
+- **Data Visualization:** Recharts
+- **Backend / Database:** Node.js, MongoDB
+- **Version Control:** Git
+
+---
+
+## 📊 Data Sources
+
+- **API Integrations:** Fetches real-time data from Apify and OpenF1.
+- **Media Assets:** Utilizes publicly available media content for enriching driver/team profiles and race visuals.
+
