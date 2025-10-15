@@ -62,7 +62,7 @@ function TeamsTable() {
                     <button
                         key={i}
                         className='fade-in'
-                        style={{'--delay': 3 + 0.4*i + 's', opacity: 0}}
+                        style={{'--delay': 1.5 + 0.4*i + 's', opacity: 0}}
                         disabled={disableButton[i]}
                         onAnimationEnd={() => handleAnimationEnd(i)}
                         onClick={() => navigate('/teamInfo/' + teamNames1[i])}
@@ -87,7 +87,7 @@ function TeamsTable() {
                         animate={hoveredIndex === i ? {
                             color: 'rgb(' + teamColours[i] + ')', scale: 1.1
                         } : {}}
-                        style={{width: 'fit-content', justifySelf: 'center', '--delay': 3 + 0.4*i + 's', opacity: 0}}
+                        style={{width: 'fit-content', justifySelf: 'center', '--delay': 1.5 + 0.4*i + 's', opacity: 0}}
                         disabled={disableButton[i]}
                         onMouseEnter={() => setHoveredIndex(i)}
                         onMouseLeave={() => setHoveredIndex(null)}
@@ -105,7 +105,7 @@ function TeamsTable() {
                         className='fade-in' 
                         disabled={disableButton[i + 5]}
                         onAnimationEnd={() => handleAnimationEnd(i + 5)}
-                        style={{'--delay': 5 + 0.4*i + 's', opacity: 0}}
+                        style={{'--delay': 1.51 + 0.4*i + 's', opacity: 0}}
                         onClick={() => navigate('/teamInfo/' + teamNames2[i])}
                     >
                         <motion.img 
@@ -129,7 +129,7 @@ function TeamsTable() {
                         animate={hoveredIndex === i + 5 ? {
                             color: 'rgb(' + teamColours[i + 5] + ')', scale: 1.1
                         } : {}}
-                        style={{width: 'fit-content', justifySelf: 'center', '--delay': 5 + 0.4*i + 's', opacity: 0}}
+                        style={{width: 'fit-content', justifySelf: 'center', '--delay': 1.51 + 0.4*i + 's', opacity: 0}}
                         onMouseEnter={() => setHoveredIndex(i + 5)}
                         onMouseLeave={() => setHoveredIndex(null)}
                         onClick={() => navigate('/teamInfo/' + item)}

@@ -53,7 +53,7 @@ function DriversTable() {
 }
 
 function DriverGrid({ driversArr }) {
-    const delayArr = useMemo(() => Array.from({length: 20}, () => (Math.random() * (3.75 - 2) + 2).toString() + 's'))
+    const delayArr = useMemo(() => Array.from({length: 20}, () => (Math.random() * (3.75 - 1.5) + 1.5).toString() + 's'))
     const navigate = useNavigate();
     const [clickedDriver, setClickedDriver] = useState(false);
     const [driverInfo, setDriverInfo] = useState([]);

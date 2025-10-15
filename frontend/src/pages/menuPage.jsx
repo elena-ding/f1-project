@@ -38,7 +38,7 @@ function MenuItems() {
                         className='menu-text' 
                         initial={{opacity: 0}} 
                         animate={{opacity: 1}} 
-                        transition={{duration: 0.7, delay: 0.5*i + 2.5}}
+                        transition={{duration: 0.7, delay: 0.5*i + 1.5}}
                         onMouseEnter={() => handleHover(i)}
                         onMouseLeave={() => handleHover(i)}
                         onClick={() => navigate('/' + item)}

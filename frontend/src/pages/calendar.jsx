@@ -45,7 +45,7 @@ function RaceList() {
                         className='race-text'
                         initial={{ translateX: '800px' }}
                         animate={{ translateX: '0px' }}
-                        transition={{ duration: 1, delay: 2 + 0.12*i, ease: 'easeOut' }}
+                        transition={{ duration: 1, delay: 1.5 + 0.12*i, ease: 'easeOut' }}
                     >
                         <Race round={item.raceNum} name={item.raceName} date={item.date} index={i} />
                     </motion.div>

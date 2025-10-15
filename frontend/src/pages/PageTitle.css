@@ -1,0 +1,13 @@
+.title-fade-in-slide-up {
+    animation: fadeIn 1s, slideUpTitleText 0.7s ease 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes slideUpTitleText {
+    0% {transform: translateX(-50%) translateY(-50%);}
+    100% {transform: translateX(-50%) translateY(var(--slide-distance));}
+}
